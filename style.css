@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar span {
+  color: #007af3;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+}
+
+a {
+  color: #444444;
+}
+
+.primary-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.column-left .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: .2em;
+}
+
+.column-left h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.column-left .primary-cta {
+  background-color: #007af3;
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.column-left .watch-video-cta {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.hero-image {
+  width: 75%;
+  margin-top: 3em;
+}
+
+.features-section {
+  background: #20272e;
+  color: white;
+}
+
+.container-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#features-list {
+  margin: 0;
+  padding: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (min-max(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, min-max(19rem, 1fr));
+}
+
+#features-list li {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+  list-style-type: none;
+  margin-left: 4em;
+  position: relative;
+}
+
+#features-list li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/accept.png);
+  background-size: contain;
+  margin-right: em;
+}
+
+.features-image {
+  display: none;
+}
+
+.about-me {
+  background: #007af3;
+  color: white;
+}
+
+.about-img {
+  width: 10em;
+  height: 9em;
+  border-radius: 50%;
+  border: 5px solid #006bd6;
+  margin-top: -5.2em;
+}
+
+.about-list {
+  list-style-type: none;
+  background: #006bd6;
+  text-align: center;
+  width: 80%;
+  padding: 2em 1em;
+  margin: 0 auto 5em auto;
+  border-radius: 1rem;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #007af3;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 5em;
+  margin-bottom: 5em;
+  display: inline-block;
+  padding: .8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+.mobile-menu-exit {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272e;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav .primary-nav {
+  margin-top: 5em;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+nav .mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  #mobile-cta {
+    display: none;
+  }
+  #mobile-exit-cta {
+    display: none;
+  }
+  .hero {
+    width: 100%;
+  }
+  .features-section {
+    width: 100%;
+  }
+  .about-me {
+    width: 100%;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav ul.secondary-nav {
+    margin: 0;
+  }
+  .navbar nav li.home a {
+    font-weight: bold;
+  }
+  .navbar nav li.search a {
+    color: #007af3;
+    border: 3px solid #007af3;
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -.1em;
+  }
+  .navbar nav li.search a:hover {
+    background: #007af3;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .column-left {
+    margin: 3em 3em 0 5em;
+  }
+  h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero-image {
+    width: 30%;
+    margin-right: 8em;
+  }
+  .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .primary-cta {
+    margin-right: 1em;
+  }
+  #features-list Li {
+    font-size: 1.4em;
+  }
+  #features-list Li::before {
+    width: 30px;
+    height: 30px;
+  }
+  .features-section {
+    position: relative;
+  }
+  .features-section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 450px;
+    bottom: -2em;
+  }
+  .about-me {
+    font-size: 1.4em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    position: absolute;
+    top: 0;
+    width: 70%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
